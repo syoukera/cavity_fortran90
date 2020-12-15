@@ -106,7 +106,7 @@ subroutine calcv()
             AS(i, j) = AMAX1(ABS(0.5*cs), ds) + 0.5*cs
             AE(i, j) = AMAX1(ABS(0.5*ce), de) - 0.5*ce
             AW(i, j) = AMAX1(ABS(0.5*cw), dw) + 0.5*cw
-            DV(i, j) = SEW(j)
+            DV(i, j) = SEW(i)
             SU(i, j) = DV(i, j)*(P(i, j-1) - P(i, j))
             SP(i, j) = 0.0
         end do
